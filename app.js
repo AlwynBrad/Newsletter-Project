@@ -16,7 +16,7 @@ app.post("/", function (req, res) {
   const url = "https://us21.api.mailchimp.com/3.0/lists/fbc4682210";
 
   // Mailchimp API key
-  const apiKey = "d80e923d5a739b1899fa0fa485b35c42-us21";  //ref: d80e923d5a739b1899fa0fa485b35c42-us21 -mailchimp
+  const apiKey = "d80e923d5a739b1899fa0fa485b35c42-us21"; 
 
   // Mailchimp list ID
   const listId = "fbc4682210";
