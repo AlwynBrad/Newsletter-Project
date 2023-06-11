@@ -1,8 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
+require("dotenv").config();
 const app = express();
 const port = 3000;
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -16,7 +18,7 @@ app.post("/", function (req, res) {
   const url = "https://us21.api.mailchimp.com/3.0/lists/fbc4682210";
 
   // Mailchimp API key
-  const apiKey = "b9e76ea292c987f74890d0783e9eb39f-us21";  //ref: b9e76ea292c987f74890d0783e9eb39f-us21
+  const apiKey = process.env.API_KEY; 
 
   // Mailchimp list ID
   const listId = "fbc4682210";
