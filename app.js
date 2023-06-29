@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
-require("dotenv").config();
+require("dotenv").config(); //evn
 const app = express();
 const port = 3000;
 
@@ -62,3 +62,4 @@ app.get("/", function (req, res) {
 app.listen(port, function () {
   console.log("Server is running on port " + port);
 });
+
