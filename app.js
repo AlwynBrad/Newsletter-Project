@@ -46,7 +46,7 @@ app.post("/", function (req, res) {
     })
     .then(function (response) {
       console.log(response.data);
-      res.send("Successfully subscribed!");
+      res.sendFile(__dirname + "/success.html");
     })
     .catch(function (error) {
       console.log(error.response.data);
